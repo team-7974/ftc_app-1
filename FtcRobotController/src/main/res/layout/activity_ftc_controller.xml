@@ -49,11 +49,14 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
     <ImageView
       android:id="@+id/robotIcon"
-      android:src="@drawable/icon_robotcontroller"
+      android:src="@drawable/il_340x270"
       android:layout_width="wrap_content"
       android:layout_height="fill_parent"
       android:adjustViewBounds="true"
-      android:layout_margin="1dp"/>
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
 
     <TextView
       android:id="@+id/textDeviceName"
@@ -79,6 +82,18 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       android:layout_centerHorizontal="true"
       android:layout_margin="10dp"/>
 
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        tools:text="Team 7974"
+        android:fontFamily="sans-serif"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textDeviceName" />
+
   </RelativeLayout>
   <!-- end of black bar -->
 
@@ -94,12 +109,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin" >
-
-    <ImageView
-        android:src="@drawable/cole"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/imageView2" />
 
     <TextView
       android:id="@+id/textNetworkConnectionStatus"
@@ -172,6 +181,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="299dp"
         android:layout_marginBottom="143dp" />
+
+    <ImageView
+        android:src="@drawable/cole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_above="@+id/textGamepad2" />
 
   </RelativeLayout>
 

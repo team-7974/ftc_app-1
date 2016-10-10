@@ -49,13 +49,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ImageView
-            android:src="@drawable/cole"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:layout_weight="1" />
-
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
