@@ -36,6 +36,7 @@ import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.util.ElapsedTime;
 
 /**
@@ -80,11 +81,12 @@ public class TemplateOpMode_Iterative extends OpMode
         backLeft = hardwareMap.dcMotor.get("bl");
         backRight = hardwareMap.dcMotor.get("br");
 
+
         // eg: Set the drive motor directions:
         // Reverse the motor that runs backwards when connected directly to the battery
         // leftMotor.setDirection(DcMotor.Direction.FORWARD); // Set to REVERSE if using AndyMark motors
         //  rightMotor.setDirection(DcMotor.Direction.REVERSE);// Set to FORWARD if using AndyMark motors
-        // telemetry.addData("Status", "Initialized");
+        telemetry.addData("Status", "Initialized");
     }
 
     /*
@@ -114,6 +116,8 @@ public class TemplateOpMode_Iterative extends OpMode
         frontRight.setPower(-gamepad1.right_stick_y);
         backLeft.setPower(-gamepad1.left_stick_y);
         backRight.setPower(-gamepad1.right_stick_y);
+        frontLeft.setDirection(DcMotorSimple.Direction.REVERSE);
+        backLeft.setDirection(DcMotorSimple.Direction.REVERSE);
     }
 
     /*
